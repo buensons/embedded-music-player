@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /usr/bin/flask_app/
+python3 flask_server.py &
+

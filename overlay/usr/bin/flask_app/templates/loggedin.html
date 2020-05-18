@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Upload your file:</h3><br>
+<div id="upload">
+    <form action="/upload" method="POST" enctype=multipart/form-data>
+        <input type="file" name="file" accept=".mp3"/>
+        <input type="submit" value="Upload"/>
+    </form>
+    {% if error == true %}
+    <h5 style="color: red;">An error occurred during the file uploading!</h5>
+    {% endif %}
+    <br><br><button onclick="logout()">Log out</button>
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Login to add a song:</h3>
+    <div id="upload">
+        <form action="/login" method="POST">
+            User<br>
+            <input type="text" name="user"/><br>
+            Password<br>
+            <input type="password" name="password"/><br><br>
+            <input type="submit" value="Log In"/>
+        </form>
+    </div>
+{% endblock %}
